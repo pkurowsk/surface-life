@@ -76,6 +76,7 @@ public class RotationWalker : MonoBehaviour {
         if (radius < circularBody.radius || radius < 0)
         {
             radius = circularBody.radius;
+            curGravity = circularBody.gravity;
         }
 
         jump();
